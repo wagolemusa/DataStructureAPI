@@ -15,7 +15,7 @@ class Send(Resource):
 		data = request.get_json(force=True)
 		
 		message = data['message']
-		phone  = data['phone']
+		phone  = str(data['phone'])
 
 		print ('+' + phone)
 		# print (musa)
